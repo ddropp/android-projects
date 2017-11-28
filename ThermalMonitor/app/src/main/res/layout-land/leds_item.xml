@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="#ff2f2f2f"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioButton
+            style="?android:attr/radioButtonStyle"
+            android:id="@+id/initialRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initialRb" />
+
+        <RadioButton
+            android:id="@+id/waitRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waitRb" />
+
+        <RadioButton
+            android:id="@+id/prepurgeRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prepurgeRb" />
+
+        <RadioButton
+            android:id="@+id/interpurgeRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interpurgeRb" />
+
+        <RadioButton
+            android:id="@+id/ignitionRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ignitionRb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/burnRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/burnRb" />
+
+        <RadioButton
+            android:id="@+id/exctinctRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exctinctRb" />
+
+        <RadioButton
+            android:id="@+id/postpurgeRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/postpurgeRb" />
+
+        <RadioButton
+            android:id="@+id/circulationRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/circulationRb" />
+
+        <RadioButton
+            android:id="@+id/errorRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/errorRb" />
+
+        <TextView
+            android:id="@+id/dummyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+</LinearLayout>

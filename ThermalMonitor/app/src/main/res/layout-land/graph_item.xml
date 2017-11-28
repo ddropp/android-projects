@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5a5a5a"
+   >
+
+    <com.apps.ddragos.thermalmonitor.graph.YView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="7dp"
+       >
+
+        <com.apps.ddragos.thermalmonitor.graph.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/graphView"/>
+    </HorizontalScrollView>
+
+</LinearLayout>

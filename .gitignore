@@ -45,6 +45,14 @@ Temporary Items
 #Java & Android SDK
 classes
 bin
+captures
+gradle/wrapper
+.gradle
 .settings
+*.ap_
+*.apk
 *.class
 *.prefs
+*.cache
+*.dex
+*.idea

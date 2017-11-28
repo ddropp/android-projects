@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ff9fa0a6"
+        android:gravity="center">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/statusTv"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            >
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:textAllCaps="false"
+                android:id="@+id/connectBtn"
+                android:text="@string/connectBtn"
+                android:enabled="true"
+                android:layout_margin="0dp"
+
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:textAllCaps="false"
+                android:id="@+id/disconnectBtn"
+                android:text="@string/disconnectBtn"
+                android:enabled="false"
+                android:layout_margin="0dp"
+
+                />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:textAllCaps="false"
+                android:id="@+id/devicesBtn"
+                android:text="@string/devicesBtn"
+                android:layout_margin="0dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:id="@+id/tabs_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+</LinearLayout>

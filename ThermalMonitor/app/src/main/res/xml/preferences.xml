@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="DHW Flow(L/min)"
+        android:key="dhwFlow_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_dhwFlow_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwFlow_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwFlow_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="00CC33" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="CH Flow Temperature"
+        android:key="chFlowTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_chFlowTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chFlowTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chFlowTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="00FFFF" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Ionization Voltage"
+        android:key="ionVoltage_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_ionVoltage_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_ionVoltage_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="10.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_ionVoltage_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="FFFF00" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="External Temperature"
+        android:key="extTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_extTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_extTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_extTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="00FFFF" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="CH Return Temperature"
+        android:key="chReturnTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_chReturnTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chReturnTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chReturnTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="CC66CC" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="DHW Temperature"
+        android:key="dhwTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_dhwTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="FF0000" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Tank S1 Temperature"
+        android:key="tankS1Temp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_tankS1Temp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_tankS1Temp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_tankS1Temp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="3366FF" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Tank S2 Temperature"
+        android:key="tankS2Temp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_tankS2Temp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_tankS2Temp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_tankS2Temp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="0099FF" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Exhaust Temperature"
+        android:key="exhaustTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_exhaustTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_exhaustTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_exhaustTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="009900" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Fan PWM"
+        android:key="fanPwm_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_fanPwm_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_fanPwm_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="0.10" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_fanPwm_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="66FF00" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Fan RPM"
+        android:key="fanRpm_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_fanRpm_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_fanRpm_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="0.04" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_fanRpm_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="FFFFFF" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="CH Pressure"
+        android:key="chPressure_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_chPressure_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chPressure_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chPressure_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="FF9900" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="CH Set Temperature"
+        android:key="chSetTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_chSetTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chSetTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_chSetTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="FF0066" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="DHW Set Temperature"
+        android:key="dhwSetTemp_cat">
+
+        <CheckBoxPreference
+            android:key="@string/pref_key_dhwSetTemp_vis"
+            android:summary="graph visibility"
+            android:title="Visible"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwSetTemp_scale"
+            android:summary="graph scale"
+            android:title="Scale"
+            android:inputType="numberDecimal"
+            android:defaultValue="1.00" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_dhwSetTemp_color"
+            android:summary="graph color"
+            android:title="Color"
+            android:inputType="textCapCharacters"
+            android:defaultValue="CCCCFF" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

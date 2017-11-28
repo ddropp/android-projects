@@ -1,0 +1,63 @@
+
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/main_layout"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#b0bef5fd">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/statusTv"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:visibility="gone"
+             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:id="@+id/devicesBtn"
+                android:text="@string/devicesBtn"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:id="@+id/disconnectBtn"
+                android:text="@string/disconnectBtn"/>
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:background="@android:color/darker_gray"
+        />
+
+    <FrameLayout
+          android:id="@+id/tabs_fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+</LinearLayout>
+
