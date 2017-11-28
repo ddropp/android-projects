@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evenimente Mondene</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="thumb_description">network image</string>
+    <string name="splash_description">Spash Image</string>
+    <string name="date">Data: </string>
+    <string name="time">Ora: </string>
+    <string name="city">Locatie:  </string>
+    <string name="locationButton">Locatie Eveniment</string>
+    <string name="back_button">Inapoi</string>
+
+</resources>
