@@ -46,7 +46,8 @@ Temporary Items
 classes
 bin
 captures
-gradle/wrapper
+gradle
+.navigation
 .gradle
 .settings
 *.ap_
